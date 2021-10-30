@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: jquerystatic
-        image: 851757011782.dkr.ecr.us-east-2.amazonaws.com/jquerystatic:2
+        image: 851757011782.dkr.ecr.us-east-2.amazonaws.com/jquerystatic:8
         ports:
         - containerPort: 80
