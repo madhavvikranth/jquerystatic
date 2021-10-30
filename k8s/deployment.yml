@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jquerydeployment
+  namespace: jquerystatic
+  labels:
+    app: jquerystatic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jquerystatic
+  template:
+    metadata:
+      labels:
+        app: jquerystatic
+    spec:
+      containers:
+      - name: jquerystatic
+        image: 851757011782.dkr.ecr.us-east-2.amazonaws.com/jquerystatic:2
+        ports:
+        - containerPort: 80
